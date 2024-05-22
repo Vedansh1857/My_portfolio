@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/28a4ccdd2c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <img id="image" src="images/UI_Developer.gif" width="400" height="300" align="right">
+                <p>Data Scientist</p>
+                <h1>Hi, This is <span>Vedansh</span><br>Gupta from India</h1>
+                
+            </div>
+           
+        </div>
+       
+    </div>
+<!-- -----------------------About section--------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/data-code.gif">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I am a passionate and dedicated aspiring data scientist, eager to delve into the world of data and uncover meaningful insights. With a strong foundation in mathematics, statistics, and programming, I am equipped to tackle complex problems and drive data-driven decision making.<p>
+
+                <p>Data scientist by day, algorithm whisperer by night. Turning caffeine into code and decoding the secrets of data. Occasionally baffled by data's whimsy 🤖💻.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience </p>
+                    <p class="tab-links" onclick="opentab('Education')">Education </p>
+                    </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Python Developer</span><br>Python data structures, Oops</li>
+                        <li><span>Data Analysis</span><br>Numpy, Pandas, Matplotlib, Seaborn</li>
+                        <li><span>Machine Learning</span><br>Sklearn, regression techniques, ensemble algorithms</li>
+                        <li><span>Deep Learning</span><br>Tensorflow, Keras, ANN, CNN</li>
+                        <li><span>NLP</span><br>NLTK, Word2Vec, RNNs, LSTMs, Transformers, BERT</li>
+                        <li><span>Generative AI</span><br>OpenAI models, Langchain, Gemini models, Llama models, RAG apps</li>
+                        <li><span>SQL Developer</span><br>Joins, Queries, Tables</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2023-2024</span><br>Generative AI</li>
+                        <li><span>2022-2023</span><br>Deep Learning & NLP</li>
+                        <li><span>2021-2022</span><br>Mlops & deployments</li>
+                        <li><span>2020-2021</span><br>Python & ML</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2024</span><br>BTech from PSIT Kanpur</li>
+                        <li><span>2019</span><br>C & C++ training from NIIT Institute</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------Services-------------------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-sketch"></i>
+                <h2>Employee promotion prediction</h2>
+                <p>Analyzed the data thoroughly and predicted whether the employee gets promoted or not with a accuracy of 92% from Decision trees</p>
+                <p>==================================</p>
+                <p>Skills: Matplotlib · Scikit-Learn · XGBoost · Gradient Boosting · NumPy · Machine Learning · Pandas · Seaborn · Data Analysis · Random Forest</p>
+                <a href="https://github.com/Vedansh1857/Data-Science-Projects/blob/main/Major_project.ipynb" target="_blank">👉Have a look👈</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-server"></i>
+                <h2>End-to-end-ML-project</h2>
+                <p>I developed an end-to-end ML project to predict wine quality with a user-friendly UI for input. I fetched, validated, preprocessed, and cleaned data from an AWS S3 bucket, then used various algorithms, selecting RandomForestRegressor for its 96% accuracy. I integrated MLFlow and Dagshub for experiment tracking, performed hyperparameter tuning with GridSearchCV, and deployed it as a Docker container on an AWS EC2 instance using GitHub actions for CI/CD.</p>
+                <a href="https://github.com/Vedansh1857/end-to-end-ml-project-with-mlflow" target="_blank"> 👉Have a look👈</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>End-to-end-DL-project</h2>
+                <p>A deep learning project which predicts whether the person has kidney tumor or not. Has an accuracy of above 94%.</p>
+                <p>==================================</p>
+                <p>Skills: OOPS · JSON · GitHub · Dagshub · Flask · Deep Learning · TensorFlow · DVC · Amazon Web Services (AWS) · Modular Programming · MLflow · Git · Convolutional Neural Networks (CNN) · Python (Programming Language) · Dockers · Image Processing</p>
+                <a href="https://github.com/Vedansh1857/end-to-end-dl-project" target="_blank"> 👉Have a look👈</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>A book store analysis using MySQL.</h2>
+                <p>Engineered a relational database for 10+ tables using MySQL to optimize book store operations. Crafted SQL queries and stored procedures for efficient sales.Engineered a relational database for 10+ tables using MySQL to optimize book store operations. Crafted SQL queries and stored procedures for efficient sales.</p>
+                <p>==================================</p>
+                <p>Skills: MySQL · XAMPP · SQL · Data Analysis · Database Management System (DBMS)</p>
+                <a href="https://github.com/Vedansh1857/SQL_by_udemy" target="_blank"> 👉Have a look👈</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>ChatGem</h2>
+                <p>
+                    An end to end Conversational QnA Chatbot, designed to provide intuitive and accurate responses to user queries across a wide range of topics, leveraging the advanced NLP techniques and the state-of-the-art capabilities of OpenAI's language model.
+                    
+                    Used Streamlit for smooth User Interface and huggingface for deployment to production.</p>
+                    <p>==================================</p>
+                <p>Skills: Generative AI · LangChain · OpenAI · Streamlit · Huggingface</p>
+                <a href="https://github.com/Vedansh1857/ChatGem" target="_blank"> 👉Have a look👈</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>GeminiRecruit</h2>
+                <p>
+                    ATS built using Google Gemini, streamlit and huggingface. The link to it is attached. So, just go upload a job description of the company to which you are applying for and get your resume score, your blunders & more.
+                    
+                    Used Streamlit for smooth User Interface and huggingface for deployment to production.</p>
+                    <p>==================================</p>
+                <p>Skills: Generative AI · Gemini · Streamlit · Huggingface</p>
+                <a href="https://github.com/Vedansh1857/GeminiRecruit" target="_blank"> 👉Have a look👈</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-square-virus"></i>
+                <h2>YTtranscriber</h2>
+                <p>
+                    Ever wished you could get the gist of a YouTube video without watching the whole thing? Our cutting-edge app, powered by the Gemini-pro LLM, does just that! Simply input the link to any YouTube video, and watch as our AI delivers a concise, engaging summary in seconds. Perfect for quick learning, research, or staying up-to-date with the latest trends—get all the key points without the time commitment. Try it now and revolutionize the way you consume video content! 📺✨</p>
+                    <p>==================================</p>
+                <p>Skills: Generative AI · Gemini · Streamlit · Huggingface</p>
+                <a href="https://github.com/Vedansh1857/YTtranscriber" target="_blank"> 👉Have a look👈</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file"></i>
+                <h2>InvoiceInsight</h2>
+                <p>
+                    It helps you save your time by reading your invoices and answering your questions such as discounts, due amount, deadlines and much more... I've attached the link to my project. Visit and chat with your invoices.</p>
+                    <p>==================================</p>
+                <p>Skills: Generative AI · Gemini · Streamlit · Huggingface</p>
+                <a href="https://github.com/Vedansh1857/InvoiceInsight" target="_blank"> 👉Have a look👈</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-stethoscope"></i>
+                <h2>NutrifyAI</h2>
+                <p>An AI nutritionist Using Google Gemini Pro Vision, a large image model with the help of streamlit and google gemini pro api. The LLM app will read the uploaded image given to it & after converting it into bytes will tell all the nutrients, pros and cons of having the food that is displayed in the image.</p>
+                <p>==================================</p>
+                <p>Skills: Generative AI · Gemini · Streamlit · Huggingface</p>
+                <a href="https://github.com/Vedansh1857/NutrifyAI" target="_blank"> 👉Have a look👈</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-pdf"></i>
+                <h2>DocConverseGemini</h2>
+                <p>DocConverseGemini is an LLM application built using Google gemini pro model and langchain where we can query multiple pdf documents with the help of FAISS vector emebeddings and can fetch any information present inside the PDFs.</p>
+                <p>==================================</p>
+                <p>Skills: Generative AI · Gemini · Large Language Models (LLM) · LangChain · Streamlit · Huggingface · FAISS</p>
+                <a href="https://github.com/Vedansh1857/ChatMultiplePDFWithGemini" target="_blank"> 👉Have a look👈</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>End to end RAG app</h2>
+                <p>End to end RAG app using streamlit... Took a webpage : https://lilianweng.github.io/posts/2023-06-23-agent/... Scraped it using beautifulsoup python package... Converted to vectors using huggingface embeddings... Stored it in Cassandra vector database, and queried the results from the db</p>
+                <p>==================================</p>
+                <p>Skills: Retrieval-Augmented Generation(RAG) · AstraDB · Vector Databases · bs4 · Cassandra · LangChain · Streamlit · Groq · Hugginface-embeddings · Mixtral</p>
+                <a href="https://github.com/Vedansh1857/End-to-end-rag-app" target="_blank"> 👉Have a look👈</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-radiation"></i>
+                <h2>GPT-4o_with_ObjectBox</h2>
+                <p>Here, I used Objectbox VectorDB, a new and efficient way of vector embeddings, with OpenAI's newly launched GPT-4o(omni) model... Used GPT-4o(omni) model from OpenAI... Took US_cencus PDFs for querying... For word embeddings, used OpenAIEmbeddings...Used ObjectBox VectorDB stores for storing vectors... Finally, created retrieval chain and invoked it for answering the query.</p>
+                <p>==================================<p>
+                <p>Skills: Vector Databases · ObjectBox · Retrieval-Augmented Generation(RAG) · LangChain · Streamlit · openai-embeddings · gpt-4o</p>
+                <a href="https://github.com/Vedansh1857/GPT-4o_with_ObjectBox_VectorDB/" target="_blank"> 👉Have a look👈</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------------Portfolio section--------------------------------------------->
+<div id="certificates">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Python logo.jpg">
+                <div class="layer">
+                    <h3>Python for Data Science, AI certificate from IBM</h3>
+                    <p>Skills: Data Science · Artificial Intelligence (AI) · Python (Programming Language) · Jupyter</p>
+                    <a href="https://drive.google.com/file/d/1KgQTAEgpiG54Xly3O0qauJa-jWesPUfG/view" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Data Science logo1.png">
+                <div class="layer">
+                    <h3>Python project for Data Science certificate from IBM</h3>
+                    <p>Hands on data science with python project</p>
+                    <a href="https://drive.google.com/file/d/1fdWIBxdnQXymScDifi9cDTwQTnsSkEtM/view?usp=sharing" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/DL logo.jpg">
+                <div class="layer">
+                    <h3>Python & Deep learning Bootcamp from Google Developers Group(GDG), Ranchi</h3>
+                    <p>Attended the bootcamp & learnt the concepts of deep learning, build neural Networks from scratch. Skills: Deep Neural Networks (DNN) · Deep Learning · Python (Programming Language) · Facial Recognition · Artificial Neural Networks</p>
+                    <a href="https://drive.google.com/file/d/1b7epl7ygaQiLPkHjOIVXOgIFwtlVos22/view" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/SQL logo.jpg">
+                <div class="layer">
+                    <h3>SQL hands-on certificate from Udemy</h3>
+                    <p>Skills: MySQL · Database Management System (DBMS) · Data Analysis · XAMPP · SQL</p>
+                    <a href="https://www.udemy.com/certificate/UC-d7164bde-0e6d-4283-ae3a-c3c364245a52/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/AI logo.jpg">
+                <div class="layer">
+                    <h3>Data Science Internship certificate from Skillvertex</h3>
+                    <p>Skills: NumPy · Machine Learning Algorithms · Machine Learning · Data Cleaning · Data Science · Data Analysis · Pandas · Data Processing · JSON</p>
+                    <a href="https://drive.google.com/file/d/1av0cZN02zDQTUYSiU3TiUOxkj_Jwp1qO/view" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/opencv logo.png">
+                <div class="layer">
+                    <h3>Python & OpenCV Bootcamp certificate from Google Developers Group(GDG), Ranchi</h3>
+                    <p>Learned image processing through Python OpenCV & made a Face Recognition System</p>
+                    <a href="https://drive.google.com/file/d/1b8EQRr2zO9aQbtxhOYXNsPFhty7ox-gl/view?usp=sharing" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------Contact Section------------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div  class="row">
+            <div  class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <!-- <p><i class="fa-solid fa-paper-plane" href="mailto:vedanshgupta606@gmail.com"></i>contact@example.com</p> -->
+                <!-- <i class="fas fa-envelope"></i> <span>email@example.com</span> -->
+                <!-- <a href="mailto:vedanshgupta606@gmail.com" <img> class="fa-solid fa-paper-plane" href="mailto:vedanshgupta606@gmail.com"img>>Mail</a> -->
+                <p><i class="fas fa-envelope"></i><a href="mailto:vedanshgupta606@gmail.com" style="color:white; text-decoration:none">vedanshgupta606@gmail.com</a></p>
+                <p><i class="fa-solid fa-square-phone"></i>9305959634</p>
+                <div class="social-icons">
+                    <a href="https://huggingface.co/ByteBrewer" target="_blank"><i class="fa-solid fa-face-grin-beam"></i></a>
+                    <a href="https://www.github.com/vedansh1857/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/vedansh-gupta-1162051b8/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/My_resume.pdf" target="_blank" class="btn btn2">Download CV</a>
+            </div> 
+           <div>
+            <!-- <img src="images/contact.mp4" height="300" width="300"> -->
+            <video width="500" height="500" autoplay loop muted>
+                <source src="images/contact.mp4" type="video/mp4">
+           </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Vedansh. Made with <i class="fas fa-heart"></i> by Me</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
